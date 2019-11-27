@@ -3,7 +3,7 @@ import java.util.ArrayList;
  * @author : Ndumiso Onke Fanti         *
  * Description : Home class             *
  * ************************************ */
-class Home{
+public class Home{
 
 //   private static int countObjects = 0;
 //    Home(){S

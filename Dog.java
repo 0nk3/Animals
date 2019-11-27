@@ -10,7 +10,7 @@ public class Dog extends Animal {
     Dog(){
         super(name);
     }
-    public void sounds() {
-        System.out.println("Dog barks");
+    public String sounds() {
+        return "Bark";
     }
 }

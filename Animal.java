@@ -3,17 +3,17 @@
  * Description : Animal class(Dog and   *
  *   Cat inherit from                   *
  * ************************************ */
-class Animal {
+public class Animal {
 
     private String name;
 
-    Animal(String name){
+    public Animal(String name){
         this.name = name;
     }
-    protected void sounds() {
-        System.out.println("sounds ...");
+    protected String sounds() {
+        return "sounds...";
     }
-    protected void eat() {
-        System.out.println(this.name + " eats");
+    protected String eat() {
+        return "Food";
     }
 }

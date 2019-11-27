@@ -2,7 +2,7 @@
  * @author : Ndumiso Onke Fanti         *
  * Main Method for Animals              S*
  * ************************************ */
-class Main {
+public class Main {
     public static void main(String[] args){
         /* ***** Part 0 code tests ********* */
         Dog dog = new Dog(); // an object for a dog
@@ -31,7 +31,7 @@ class Main {
 
         home.adoptPet(dog2);     // adopting another dog and recording it on the list
         home.makeAllSounds();
-        // Lets see what happends when you try to adopt the same animal twice
+        // Lets see what happens when you try to adopt the same animal twice
         home.adoptPet(dog1);    // adopting dog1 again(already adopted in in line 26)
         // The output is "you cant adopt the same pet twice!"
 
