@@ -8,27 +8,27 @@ class AnimalTest {
     Cat catObj = new Cat();
 
     @Test
-    public void testDogSound(){
-        assertEquals("Bark", dogObj.sounds());         // this test passes
-        assertEquals("barks", dogObj.sounds());        // this test fails
+    void testDogSound(){
+        assertEquals("Bark", dogObj.sounds(),"This test passes : Expected = Actual");
+        assertEquals("barks", dogObj.sounds(), "This test case fails due to incorrect output : Bark v barks");
     }
     @Test
-    public void testDogEats(){
-        assertEquals("Food", dogObj.eat());         // This test passes
-        assertEquals("food", dogObj.eat());         // This test fails
+    void testDogEats(){
+        assertEquals("Food", dogObj.eat(), "This test case passes : Expected = Actual");
+        assertEquals("food", dogObj.eat(), "This test case fails due to case sensitivity of expected output : Food v food");
 
     }
     @Test
-    public void testCatSound(){
-        assertEquals("Barkark", catObj.sounds());   // this test fails
-        assertEquals("Meow", catObj.sounds());      // this test passes
+    void testCatSound(){
+        assertEquals("Barkark", catObj.sounds(), "This test case fails due to incorrect expected output");
+        assertEquals("Meow", catObj.sounds(), "This is test case passes : Expected = Actual");
 
 
     }
     @Test
-    public void testCatEats(){
-        assertEquals("meat", catObj.eat());          //this test fails
-        assertEquals("Food", catObj.eat());          // this test passes
-        assertEquals("food", catObj.eat());           // this test fails
+    void testCatEats(){
+        assertEquals("meat", catObj.eat(), "This test case fails : Food v meat ");
+        assertEquals("Food", catObj.eat() , "This test case passes : Expected = Actual");
+        assertEquals("food", catObj.eat(), "This test case fails due to case sensitivity : Food v food");           // this test fails
     }
 }
