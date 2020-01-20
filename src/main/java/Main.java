@@ -34,6 +34,6 @@ public class Main {
         home.adoptPet(dog2);     // adopting another dog and recording it on the list
         home.makeAllSounds();
 
-        home.adoptPet(dog1);    // adopting dog1 for the second time (already adopted in in line 26)
+        home.adoptPet(dog2);    // adopting dog1 for the second time (already adopted in in line 26)
     }
 }

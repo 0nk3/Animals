@@ -4,15 +4,17 @@ import java.util.ArrayList;
  * Description : Home class             *
  * ************************************ */
 public class Home{
-    
+
     private ArrayList<Animal> homeAnimals = new ArrayList<>();    //array list to store animals
     //throwing the exceptions gives abnormal behavior to my program. so Im just gonna print out as error
+
     void adoptPet(Animal animal){
-        if(homeAnimals.contains(animal)){
-            System.err.println("Error : You cant adopt the same animal twice!");
+        if(!homeAnimals.contains(animal)){
+            homeAnimals.add(animal);
         }
         else{
-            homeAnimals.add(animal);
+            System.err.println("You cant adopt the same animal twice!");
+
         }
     }
 
