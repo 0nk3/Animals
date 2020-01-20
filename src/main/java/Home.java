@@ -11,10 +11,10 @@ public class Home{
 //        System.out.println(countObjects);
 //    }
     private ArrayList<Animal> homeAnimals = new ArrayList<>();    //array list to store animals
-
+    //throwing the exceptions gives abnormal behavior to my program. so Im just gonna print out as error
     void adoptPet(Animal animal){
         if(homeAnimals.contains(animal)){
-            System.out.println("You cant adopt the same animal twice! ");
+            System.err.println("Error : You cant adopt the same animal twice!");
         }
         else{
             homeAnimals.add(animal);

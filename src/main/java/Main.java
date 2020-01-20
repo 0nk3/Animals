@@ -3,7 +3,7 @@
  * Main Method for Animals              *
  * ************************************ */
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception {
         /* ***** Part 0 code tests ********* */
         Dog dog = new Dog(); // an object for a dog
         dog.eat();           // ----> Rax eats
@@ -34,9 +34,6 @@ public class Main {
         home.adoptPet(dog2);     // adopting another dog and recording it on the list
         home.makeAllSounds();
 
-        //Lets see what happens when you try to adopt the same animal twice
-        home.adoptPet(dog1);    // adopting dog1 again(already adopted in in line 26)
-        //The output is "you cant adopt the same pet twice!"
-//
+        home.adoptPet(dog1);    // adopting dog1 for the second time (already adopted in in line 26)
     }
 }
