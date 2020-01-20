@@ -14,6 +14,7 @@ public class Animal {
         return "sounds...";
     }
     protected String eat() {
+        System.out.println("Food");
         return "Food";
     }
 }

@@ -1,6 +1,6 @@
 /* **************************************
  * @author : Ndumiso Onke Fanti         *
- * Main Method for Animals              S*
+ * Main Method for Animals              *
  * ************************************ */
 public class Main {
     public static void main(String[] args){
@@ -8,14 +8,13 @@ public class Main {
         Dog dog = new Dog(); // an object for a dog
         dog.eat();           // ----> Rax eats
         dog.sounds();        // -----> Dog barks
-
-        System.out.println();
+        System.out.println("===============================================");
 
         Cat cat =  new Cat();    // new cat object
         cat.eat();              //----> Stormy eats
         cat.sounds();           // ----> Cat meows
 
-        System.out.println();
+        System.out.println("===============================================");
 
         Home home = new Home();
         Dog dog1 = new Dog();  // create a new dog object
@@ -31,9 +30,10 @@ public class Main {
 
         home.adoptPet(dog2);     // adopting another dog and recording it on the list
         home.makeAllSounds();
-        // Lets see what happens when you try to adopt the same animal twice
-        home.adoptPet(dog1);    // adopting dog1 again(already adopted in in line 26)
-        // The output is "you cant adopt the same pet twice!"
 
+        //Lets see what happens when you try to adopt the same animal twice
+        home.adoptPet(dog1);    // adopting dog1 again(already adopted in in line 26)
+        //The output is "you cant adopt the same pet twice!"
+//
     }
 }

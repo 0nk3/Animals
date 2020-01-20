@@ -10,7 +10,7 @@ public class Home{
 //        countObjects++;
 //        System.out.println(countObjects);
 //    }
-    private ArrayList<Animal> homeAnimals = new ArrayList<>();    //arrraylist to store animals
+    private ArrayList<Animal> homeAnimals = new ArrayList<>();    //array list to store animals
 
     void adoptPet(Animal animal){
         if(homeAnimals.contains(animal)){
