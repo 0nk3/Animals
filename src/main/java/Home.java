@@ -4,12 +4,7 @@ import java.util.ArrayList;
  * Description : Home class             *
  * ************************************ */
 public class Home{
-
-//   private static int countObjects = 0;
-//    Home(){S
-//        countObjects++;
-//        System.out.println(countObjects);
-//    }
+    
     private ArrayList<Animal> homeAnimals = new ArrayList<>();    //array list to store animals
     //throwing the exceptions gives abnormal behavior to my program. so Im just gonna print out as error
     void adoptPet(Animal animal){
