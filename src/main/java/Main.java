@@ -14,7 +14,7 @@ public class Main {
         cat.eat();              //----> Stormy eats
         cat.sounds();           // ----> Cat meows
 
-        System.out.println("===============================================");
+        System.out.println("<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 
         Home home = new Home();
         Dog dog1 = new Dog();  // create a new dog object
@@ -22,11 +22,14 @@ public class Main {
         Cat cat1 = new Cat();   // 'cat' already been used hence 'cat1' as the name of the object
 
         home.makeAllSounds();    // --> No output because there are no adopted pets
+
         home.adoptPet(dog1);     // adopting a pet and adding it to the list of adopted animals
         home.makeAllSounds();    // ---> Dog barks
 
+
         home.adoptPet(cat1);       // adopting a cat and adding ti to the list of adopted animals
         home.makeAllSounds();    // prints Dog barks and Cat meows
+
 
         home.adoptPet(dog2);     // adopting another dog and recording it on the list
         home.makeAllSounds();
