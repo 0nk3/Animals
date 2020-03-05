@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AnimalTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-03-05T12:27:25" hostname="kali" time="0.019">
+  <properties/>
+  <testcase name="testCatEats()" classname="AnimalTest" time="0.012"/>
+  <testcase name="testCatSound()" classname="AnimalTest" time="0.001"/>
+  <testcase name="testDogEats()" classname="AnimalTest" time="0.001"/>
+  <testcase name="testDogSound()" classname="AnimalTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -3,37 +3,28 @@
  * Main Method for Animals              *
  * ************************************ */
 public class Main {
-    public static void main(String[] args) throws Exception {
-        /* ***** Part 0 code tests ********* */
-        Dog dog = new Dog(); // an object for a dog
-        dog.eat();           // ----> Rax eats
-        dog.sounds();        // -----> Dog barks
+    public static void main(String[] args) {
+
+        Animal rax = new Dog("Rax");
+        System.out.println(rax.eat());
+        System.out.println(rax.sounds());
+
         System.out.println("===============================================");
+        Animal stormy =  new Cat("Stormy");
+        System.out.println(stormy.eat());
+        System.out.println(stormy.sounds());
 
-        Cat cat =  new Cat();    // new cat object
-        cat.eat();              //----> Stormy eats
-        cat.sounds();           // ----> Cat meows
-
-        System.out.println("<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-
+        System.out.println("===============================================");
         Home home = new Home();
-        Dog dog1 = new Dog();  // create a new dog object
-        Dog dog2 = new Dog();  // create a new dog object
-        Cat cat1 = new Cat();   // 'cat' already been used hence 'cat1' as the name of the object
+        Dog bobby = new Dog("Bobby");
+        Dog bishop = new Dog("Bishop");
+        Cat micky = new Cat("Micky");
 
-        home.makeAllSounds();    // --> No output because there are no adopted pets
-
-        home.adoptPet(dog1);     // adopting a pet and adding it to the list of adopted animals
-        home.makeAllSounds();    // ---> Dog barks
-
-
-        home.adoptPet(cat1);       // adopting a cat and adding ti to the list of adopted animals
-        home.makeAllSounds();    // prints Dog barks and Cat meows
-
-
-        home.adoptPet(dog2);     // adopting another dog and recording it on the list
+        home.adoptPet(bobby);
+        home.adoptPet(bishop);
+        home.adoptPet(micky);
         home.makeAllSounds();
 
-        home.adoptPet(dog2);    // adopting dog1 for the second time (already adopted in in line 26)
+        home.adoptPet(bishop);
     }
 }

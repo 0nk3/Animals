@@ -5,14 +5,12 @@
  * ************************************ */
 public class Dog extends Animal {
 
-    public static String name = "Rax";
-
-    Dog(){
+    public Dog(String name) {
         super(name);
     }
+
     @Override
     public String sounds() {
-        System.out.println("Dog Barks");
-        return "Barks";
+        return "Dog Barks";
     }
 }

@@ -5,8 +5,7 @@ import java.util.ArrayList;
  * ************************************ */
 public class Home{
 
-    private ArrayList<Animal> homeAnimals = new ArrayList<>();    //array list to store animals
-    //throwing the exceptions gives abnormal behavior to my program. so Im just gonna print out as error
+    private ArrayList<Animal> homeAnimals = new ArrayList<>();
 
     void adoptPet(Animal animal){
         if(!homeAnimals.contains(animal)){
@@ -14,13 +13,15 @@ public class Home{
         }
         else{
             System.err.println("You cant adopt the same animal twice!");
-
         }
     }
 
     void makeAllSounds() {
         for (int i = 0; i < homeAnimals.size(); i++) {
-            homeAnimals.get(i).sounds();
+            if(homeAnimals.get(i) instanceof  Dog){
+                System.out.println("Dog Barks");
+            }
+            System.out.println("Cat Meows");
         }
 
     }

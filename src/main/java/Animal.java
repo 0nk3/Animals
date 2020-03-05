@@ -5,16 +5,15 @@
  * ************************************ */
 public class Animal {
 
-    private String name;
+    private final String name;
 
-    public Animal(String name){
+    Animal(String name){
         this.name = name;
     }
     protected String sounds() {
         return "sounds...";
     }
     protected String eat() {
-        System.out.println("Food");
-        return "Food";
+        return this.name + " eats";
     }
 }
